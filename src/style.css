@@ -1,1 +1,81 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  background-color: green;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Transición para el cambio de tamaño */
+  transition: width 0.3s, height 0.3s;
+}
+
+.palo-up {
+  font-size: 3rem;
+  position: absolute;
+  top: 1%;
+  left: 5%;
+}
+
+.card-value {
+  font-size: 4rem;
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.palo-down {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 1%;
+  right: 5%;
+  transform: rotate(180deg);
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: black;
+}
+
+.diamonds::before {
+  content: "♦";
+}
+
+.hearts::before {
+  content: "♥";
+}
+
+.spades::before {
+  content: "♠";
+}
+
+.clubs::before {
+  content: "♣";
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.controls input {
+  margin: 5px;
+}
