@@ -88,7 +88,7 @@ document
 // Temporizador para que generaremoa una carta nueva cada 10 segundos
 setInterval(() => {
   generateRandomCard();
-}, 100);
+}, 10000);
 
 // Ejecutamos la función cada vez que la página se cargue
 window.onload = function() {
