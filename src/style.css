@@ -3,11 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 2rem;
   background-color: green;
 }
 
@@ -19,9 +15,9 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   /* Transición para el cambio de tamaño */
-  transition: width 0.3s, height 0.3s;
+  transition: width 0.5s, height 0.5s;
 }
 
 .palo-up {
@@ -32,7 +28,7 @@ body {
 }
 
 .card-value {
-  font-size: 4rem;
+  font-size: 5rem;
   position: absolute;
   margin: 0 auto;
   top: 50%;
@@ -70,12 +66,4 @@ body {
 
 .clubs::before {
   content: "♣";
-}
-
-.controls {
-  margin-bottom: 10px;
-}
-
-.controls input {
-  margin: 5px;
 }
