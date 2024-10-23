@@ -29,7 +29,7 @@ const cardSymbols = [
   { name: "clubs" }
 ];
 
-// Función para determinar el color según el palo
+// Función para que determinemos el color según el palo
 
 function getSymbolColor(symbol) {
   if (symbol === "diamonds" || symbol === "hearts") {
@@ -39,7 +39,7 @@ function getSymbolColor(symbol) {
   }
 }
 
-// Función para que generaremos una carta aleatoria
+// Función para que generemos una carta aleatoria
 
 function generateRandomCard() {
   const randomValue = cardValues[Math.floor(Math.random() * cardValues.length)];
@@ -85,7 +85,7 @@ document
     adjustCardSize();
   });
 
-// Temporizador para que generaremoa una carta nueva cada 10 segundos
+// Temporizador para que generemos una carta nueva cada 10 segundos
 setInterval(() => {
   generateRandomCard();
 }, 10000);
